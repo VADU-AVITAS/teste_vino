@@ -19,11 +19,7 @@
             --border-subtle: rgba(196, 154, 69, 0.3);
         }
 
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
 
         body {
             font-family: 'Plus Jakarta Sans', sans-serif;
@@ -32,188 +28,67 @@
             line-height: 1.8;
         }
 
-        h1, h2, h3, h4, .serif-font {
-            font-family: 'Playfair Display', serif;
-        }
+        h1, h2, h3, h4, .serif-font { font-family: 'Playfair Display', serif; }
 
         /* AGE GATE BANNER */
         #age-gate {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-            background: rgba(44, 34, 36, 0.96);
-            backdrop-filter: blur(12px);
-            z-index: 999999;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
+            position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
+            background: rgba(44, 34, 36, 0.97); backdrop-filter: blur(12px);
+            z-index: 999999; display: flex; justify-content: center; align-items: center; padding: 20px;
         }
-
         .age-gate-box {
-            background: var(--bg-card);
-            padding: 45px 35px;
-            max-width: 450px;
-            width: 100%;
-            border-radius: 8px;
-            text-align: center;
-            box-shadow: 0 25px 50px rgba(0,0,0,0.5);
+            background: var(--bg-card); padding: 45px 35px; max-width: 450px; width: 100%;
+            border-radius: 8px; text-align: center; box-shadow: 0 25px 50px rgba(0,0,0,0.5);
             border-top: 4px solid var(--wine-primary);
         }
-
-        .age-gate-box h2 {
-            color: var(--wine-primary);
-            font-size: 24px;
-            margin-bottom: 10px;
-        }
-
-        .age-gate-box p {
-            color: var(--text-muted);
-            font-size: 13px;
-            margin-bottom: 25px;
-        }
+        .age-gate-box h2 { color: var(--wine-primary); font-size: 24px; margin-bottom: 10px; }
+        .age-gate-box p { color: var(--text-muted); font-size: 13px; margin-bottom: 25px; }
 
         .btn-primary {
-            background: var(--wine-primary);
-            color: #FFFFFF;
-            border: none;
-            padding: 12px 28px;
-            font-weight: 600;
-            font-size: 13px;
-            letter-spacing: 1px;
-            cursor: pointer;
-            border-radius: 4px;
-            transition: all 0.3s ease;
-            text-transform: uppercase;
-            text-decoration: none;
-            display: inline-block;
-            width: 100%;
+            background: var(--wine-primary); color: #FFFFFF; border: none; padding: 12px 28px;
+            font-weight: 600; font-size: 13px; letter-spacing: 1px; cursor: pointer;
+            border-radius: 4px; transition: all 0.3s ease; text-transform: uppercase; display: inline-block; width: 100%;
         }
-
-        .btn-primary:hover {
-            background: var(--wine-light);
-        }
-
+        .btn-primary:hover { background: var(--wine-light); }
         .btn-secondary {
-            background: transparent;
-            color: var(--text-muted);
-            border: 1px solid var(--border-subtle);
-            padding: 10px;
-            font-size: 12px;
-            cursor: pointer;
-            border-radius: 4px;
-            margin-top: 10px;
-            display: block;
-            width: 100%;
+            background: transparent; color: var(--text-muted); border: 1px solid var(--border-subtle);
+            padding: 10px; font-size: 12px; cursor: pointer; border-radius: 4px; margin-top: 10px; display: block; width: 100%;
         }
-        .btn-secondary:hover {
-            background: rgba(0,0,0,0.03);
-        }
+        .btn-secondary:hover { background: rgba(0,0,0,0.03); }
 
         /* HEADER & NAVIGATION */
         header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            z-index: 1000;
-            background: rgba(251, 249, 245, 0.95);
-            border-bottom: 1px solid var(--border-subtle);
-            backdrop-filter: blur(10px);
+            position: fixed; top: 0; left: 0; width: 100%; z-index: 1000;
+            background: rgba(251, 249, 245, 0.95); border-bottom: 1px solid var(--border-subtle); backdrop-filter: blur(10px);
         }
-
-        .nav-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 30px;
-        }
-
+        .nav-container { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 15px 30px; }
         .brand-logo { text-decoration: none; cursor: pointer; }
-        .brand-name {
-            font-family: 'Playfair Display', serif;
-            font-size: 22px;
-            color: var(--wine-primary);
-            font-weight: 700;
-            letter-spacing: 1px;
-        }
-        .brand-sub {
-            font-size: 10px;
-            color: var(--olive-accent);
-            letter-spacing: 2px;
-            display: block;
-            text-transform: uppercase;
-            font-weight: 600;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 20px;
-            list-style: none;
-            align-items: center;
-        }
-
+        .brand-name { font-family: 'Playfair Display', serif; font-size: 22px; color: var(--wine-primary); font-weight: 700; letter-spacing: 1px; }
+        .brand-sub { font-size: 10px; color: var(--olive-accent); letter-spacing: 2px; display: block; text-transform: uppercase; font-weight: 600; }
+        .nav-links { display: flex; gap: 20px; list-style: none; align-items: center; }
         .nav-links button {
-            background: transparent;
-            border: none;
-            color: var(--text-main);
-            font-size: 13px;
-            font-weight: 500;
-            cursor: pointer;
-            font-family: inherit;
-            transition: color 0.3s ease;
+            background: transparent; border: none; color: var(--text-main); font-size: 13px; font-weight: 500; cursor: pointer; font-family: inherit; transition: color 0.3s ease;
         }
-
-        .nav-links button:hover {
-            color: var(--wine-primary);
-            font-weight: 600;
-        }
-
+        .nav-links button:hover { color: var(--wine-primary); font-weight: 600; }
         .shop-btn-nav {
-            background: var(--olive-accent) !important;
-            color: #FFF !important;
-            padding: 8px 16px !important;
-            border-radius: 4px;
+            background: var(--olive-accent) !important; color: #FFF !important; padding: 8px 16px !important; border-radius: 4px; position: relative;
+        }
+        .cart-badge {
+            background: var(--wine-primary); color: #fff; font-size: 10px; padding: 2px 6px; border-radius: 50%; position: absolute; top: -5px; right: -5px;
         }
 
-        /* PAGE VIEWS (SPA SYSTEM) */
-        .page-view {
-            display: none;
-            padding-top: 90px;
-            min-height: 85vh;
-        }
-
-        .page-view.active {
-            display: block;
-        }
+        /* PAGE VIEWS */
+        .page-view { display: none; padding-top: 90px; min-height: 85vh; }
+        .page-view.active { display: block; }
 
         /* HERO SECTION */
         .hero {
-            height: 85vh;
-            background: linear-gradient(rgba(44, 34, 36, 0.45), rgba(44, 34, 36, 0.65)), url('https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?q=80&w=1600&auto=format&fit=crop') no-repeat center center/cover;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 0 20px;
+            height: 85vh; background: linear-gradient(rgba(44, 34, 36, 0.45), rgba(44, 34, 36, 0.65)), url('https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?q=80&w=1600&auto=format&fit=crop') no-repeat center center/cover;
+            display: flex; align-items: center; justify-content: center; text-align: center; padding: 0 20px;
         }
-
         .hero-content { max-width: 800px; color: #FFFFFF; }
         .hero-badge {
-            background: var(--gold-accent);
-            color: #2C2224;
-            padding: 6px 14px;
-            font-size: 11px;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            border-radius: 20px;
-            display: inline-block;
-            margin-bottom: 20px;
+            background: var(--gold-accent); color: #2C2224; padding: 6px 14px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; border-radius: 20px; display: inline-block; margin-bottom: 20px;
         }
         .hero-title { font-size: 46px; line-height: 1.2; margin-bottom: 20px; font-weight: 700; }
         .hero-desc { font-size: 16px; font-weight: 300; margin-bottom: 35px; color: #F3EFEA; }
@@ -222,60 +97,24 @@
         .section { padding: 60px 20px; }
         .container { max-width: 1100px; margin: 0 auto; }
         .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; }
-
-        .section-subtitle {
-            color: var(--olive-accent);
-            font-size: 11px;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            font-weight: 700;
-            margin-bottom: 10px;
-            display: block;
-        }
+        .section-subtitle { color: var(--olive-accent); font-size: 11px; text-transform: uppercase; letter-spacing: 3px; font-weight: 700; margin-bottom: 10px; display: block; }
         .section-title { font-size: 34px; color: var(--wine-primary); margin-bottom: 20px; }
 
         .story-image-card {
-            background: var(--bg-surface);
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 15px 30px rgba(0,0,0,0.05);
-            border: 1px solid var(--border-subtle);
+            background: var(--bg-surface); border-radius: 8px; overflow: hidden; box-shadow: 0 15px 30px rgba(0,0,0,0.05); border: 1px solid var(--border-subtle);
         }
         .story-image-card img { width: 100%; height: 300px; object-fit: cover; }
         .story-image-content { padding: 25px; }
 
-        /* WINE CATALOG & ANIMATED ICONS */
-        .wine-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
-            gap: 30px;
-            margin-top: 30px;
-        }
-        .wine-card {
-            background: var(--bg-card);
-            border-radius: 8px;
-            border: 1px solid var(--border-subtle);
-            padding: 35px 30px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.03);
-        }
+        /* WINE CATALOG & ICONS */
+        .wine-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(330px, 1fr)); gap: 30px; margin-top: 30px; }
+        .wine-card { background: var(--bg-card); border-radius: 8px; border: 1px solid var(--border-subtle); padding: 35px 30px; box-shadow: 0 10px 25px rgba(0,0,0,0.03); }
         .wine-tag { font-size: 11px; color: var(--olive-accent); text-transform: uppercase; letter-spacing: 2px; font-weight: 600; }
         .wine-name { font-size: 24px; color: var(--wine-primary); margin: 8px 0 15px; }
 
-        .pairing-icons-box {
-            display: flex;
-            gap: 12px;
-            margin: 20px 0;
-            padding: 12px;
-            background: var(--bg-surface);
-            border-radius: 6px;
-            align-items: center;
-        }
+        .pairing-icons-box { display: flex; gap: 12px; margin: 20px 0; padding: 12px; background: var(--bg-surface); border-radius: 6px; align-items: center; }
         .pairing-icon-item { display: flex; align-items: center; gap: 6px; font-size: 12px; color: var(--text-muted); font-weight: 500; }
-        .icon-circle {
-            width: 32px; height: 32px; border-radius: 50%; background: #FFFFFF;
-            display: flex; align-items: center; justify-content: center; font-size: 16px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.08);
-        }
+        .icon-circle { width: 32px; height: 32px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; font-size: 16px; box-shadow: 0 2px 5px rgba(0,0,0,0.08); }
 
         .tech-list { list-style: none; margin: 20px 0; font-size: 13px; }
         .tech-list li { padding: 8px 0; border-bottom: 1px dashed rgba(0,0,0,0.06); display: flex; justify-content: space-between; }
@@ -283,50 +122,51 @@
         .tech-list li span:last-child { font-weight: 600; color: var(--text-main); }
 
         /* BOOKING & FORMS */
-        .booking-box, .b2b-simulator {
-            background: var(--bg-surface);
-            border: 1px solid var(--border-subtle);
-            border-radius: 8px;
-            padding: 40px;
-            margin-top: 30px;
-        }
+        .booking-box, .b2b-simulator { background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: 8px; padding: 40px; margin-top: 30px; }
         .form-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; margin-bottom: 20px; }
         .form-group label { display: block; font-size: 12px; font-weight: 600; color: var(--text-muted); margin-bottom: 6px; text-transform: uppercase; }
-        .form-control {
-            width: 100%; padding: 12px; background: #FFFFFF; border: 1px solid var(--border-subtle);
-            border-radius: 4px; font-family: inherit; color: var(--text-main);
+        .form-control { width: 100%; padding: 12px; background: #FFFFFF; border: 1px solid var(--border-subtle); border-radius: 4px; font-family: inherit; color: var(--text-main); }
+
+        /* CHATBOT FLUTUANTE (WIDGET NO CANTO INFERIOR DIREITO) */
+        #chatbot-widget {
+            position: fixed; bottom: 20px; right: 20px; z-index: 4000; font-family: inherit;
         }
+        .chat-toggle-btn {
+            background: var(--wine-primary); color: #fff; border: none; width: 55px; height: 55px;
+            border-radius: 50%; font-size: 24px; cursor: pointer; box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            display: flex; align-items: center; justify-content: center; transition: transform 0.3s ease;
+        }
+        .chat-toggle-btn:hover { transform: scale(1.08); }
+        .chat-window {
+            display: none; position: absolute; bottom: 70px; right: 0; width: 340px; background: var(--bg-card);
+            border-radius: 12px; border: 1px solid var(--border-subtle); box-shadow: 0 10px 30px rgba(0,0,0,0.2); overflow: hidden;
+        }
+        .chat-window.open { display: block; }
+        .chat-header { background: var(--wine-primary); color: #fff; padding: 12px 16px; font-size: 13px; font-weight: 600; display: flex; justify-content: space-between; align-items: center; }
+        .chat-body { height: 260px; padding: 15px; overflow-y: auto; background: var(--bg-surface); display: flex; flex-direction: column; gap: 10px; font-size: 12px; }
+        .chat-msg { max-width: 85%; padding: 8px 12px; border-radius: 6px; }
+        .chat-msg.bot { background: #fff; border: 1px solid var(--border-subtle); align-self: flex-start; color: var(--text-main); }
+        .chat-msg.user { background: var(--wine-primary); color: #fff; align-self: flex-end; }
+        .chat-footer { display: flex; padding: 10px; background: #fff; border-top: 1px solid var(--border-subtle); gap: 6px; }
+        .chat-footer input { flex: 1; padding: 8px; font-size: 12px; border: 1px solid var(--border-subtle); border-radius: 4px; }
+        .chat-footer button { padding: 8px 12px; font-size: 12px; background: var(--wine-primary); color: #fff; border: none; border-radius: 4px; cursor: pointer; }
+
+        /* MARKETPLACE MODAL COM CARRINHO FUNCIONAL */
+        #marketplace-modal {
+            display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
+            background: rgba(44, 34, 36, 0.95); z-index: 5000; padding: 40px 20px; overflow-y: auto;
+        }
+        .market-container { max-width: 800px; margin: 40px auto; background: var(--bg-card); border-radius: 8px; padding: 40px; }
+        .market-item { display: flex; justify-content: space-between; align-items: center; padding: 15px 0; border-bottom: 1px solid var(--border-subtle); font-size: 14px; }
 
         /* SITEMAP FOOTER */
-        .sitemap-section {
-            background: var(--bg-surface);
-            border-top: 1px solid var(--border-subtle);
-            padding: 40px 20px;
-            margin-top: 60px;
-        }
-        .sitemap-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 30px;
-            max-width: 1100px;
-            margin: 0 auto;
-        }
+        .sitemap-section { background: var(--bg-surface); border-top: 1px solid var(--border-subtle); padding: 40px 20px; margin-top: 60px; }
+        .sitemap-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 30px; max-width: 1100px; margin: 0 auto; }
         .sitemap-col h4 { color: var(--wine-primary); font-size: 16px; margin-bottom: 15px; }
         .sitemap-col ul { list-style: none; }
         .sitemap-col ul li { margin-bottom: 8px; }
-        .sitemap-col ul li button {
-            background: none; border: none; color: var(--text-muted); cursor: pointer;
-            font-size: 13px; font-family: inherit; padding: 0; text-align: left;
-        }
+        .sitemap-col ul li button { background: none; border: none; color: var(--text-muted); cursor: pointer; font-size: 13px; font-family: inherit; padding: 0; text-align: left; }
         .sitemap-col ul li button:hover { color: var(--wine-primary); text-decoration: underline; }
-
-        /* MARKETPLACE MODAL */
-        #marketplace-modal {
-            display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
-            background: rgba(44, 34, 36, 0.95); z-index: 3000; padding: 40px 20px; overflow-y: auto;
-        }
-        .market-container { max-width: 900px; margin: 40px auto; background: var(--bg-card); border-radius: 8px; padding: 40px; }
-        .market-item { display: flex; justify-content: space-between; align-items: center; padding: 20px 0; border-bottom: 1px solid var(--border-subtle); }
 
         @media (max-width: 768px) {
             .grid-2 { grid-template-columns: 1fr; gap: 30px; }
@@ -341,7 +181,7 @@
     <div id="age-gate">
         <div class="age-gate-box">
             <h2>QUINTA DO BONJARDIM</h2>
-            <p>Confirme que tem idade legal para aceder a conteúdos de enoturismo e vinhos.</p>
+            <p>Confirme que tem idade legal para aceder a conteúdos de enoturismo e vinhos biológicos.</p>
             <button class="btn-primary" onclick="entrarSite()">Sim, Tenho +18 Anos</button>
             <button class="btn-secondary" onclick="alert('Acesso restrito a maiores de idade.');">Não tenho idade legal</button>
         </div>
@@ -360,12 +200,12 @@
                 <li><button onclick="switchPage('vinhos')">Vinhos & Fichas</button></li>
                 <li><button onclick="switchPage('enoturismo')">Enoturismo & Lodges</button></li>
                 <li><button onclick="switchPage('restaurantes')">Parceiros HORECA</button></li>
-                <li><button class="shop-btn-nav" onclick="openMarketplace()">Loja Online</button></li>
+                <li><button class="shop-btn-nav" onclick="openMarketplace()">Loja Online <span id="cart-count" class="cart-badge">0</span></button></li>
             </ul>
         </div>
     </header>
 
-    <!-- PÁGINA 1: INÍCIO (HOME) -->
+    <!-- PÁGINA 1: INÍCIO -->
     <div id="page-home" class="page-view active">
         <section class="hero">
             <div class="hero-content">
@@ -426,27 +266,18 @@
                         <p style="font-size: 13px; color: var(--text-muted);">Maceração pelicular de castas brancas autóctonas. Um vinho vibrante, texturado e de grande personalidade.</p>
                         
                         <div class="pairing-icons-box">
-                            <div class="pairing-icon-item">
-                                <div class="icon-circle">🍇</div>
-                                <span>Castas Brancas</span>
-                            </div>
-                            <div class="pairing-icon-item">
-                                <div class="icon-circle">🍲</div>
-                                <span>Maranho</span>
-                            </div>
-                            <div class="pairing-icon-item">
-                                <div class="icon-circle">🧀</div>
-                                <span>Queijo Cabra</span>
-                            </div>
+                            <div class="pairing-icon-item"><div class="icon-circle">🍇</div><span>Castas Brancas</span></div>
+                            <div class="pairing-icon-item"><div class="icon-circle">🍲</div><span>Maranho</span></div>
+                            <div class="pairing-icon-item"><div class="icon-circle">🧀</div><span>Queijo Cabra</span></div>
                         </div>
 
                         <ul class="tech-list">
                             <li><span>Certificação:</span> <span>ECOCERT Biológico</span></li>
                             <li><span>Vinificação:</span> <span>Fermentação Espontânea</span></li>
                             <li><span>Teor Alcoólico:</span> <span>12.5% Vol.</span></li>
-                            <li><span>Temperatura:</span> <span>10ºC - 12ºC</span></li>
+                            <li><span>Preço Unitário:</span> <strong style="color: var(--wine-primary);">22,00 €</strong></li>
                         </ul>
-                        <button class="btn-primary" style="margin-top: 15px;" onclick="openMarketplace()">Ver na Loja Online</button>
+                        <button class="btn-primary" style="margin-top: 15px;" onclick="adicionarAoCarrinho('Orange Wine 2025', 22.00)">Adicionar ao Carrinho</button>
                     </div>
 
                     <!-- Vinho 2 -->
@@ -456,27 +287,18 @@
                         <p style="font-size: 13px; color: var(--text-muted);">Equilíbrio perfeito entre fruta vermelha madura, notas balsâmicas e taninos sedosos de grande elegância.</p>
                         
                         <div class="pairing-icons-box">
-                            <div class="pairing-icon-item">
-                                <div class="icon-circle">🍇</div>
-                                <span>Touriga / Roriz</span>
-                            </div>
-                            <div class="pairing-icon-item">
-                                <div class="icon-circle">🍖</div>
-                                <span>Cabrito Assado</span>
-                            </div>
-                            <div class="pairing-icon-item">
-                                <div class="icon-circle">🥖</div>
-                                <span>Enchidos</span>
-                            </div>
+                            <div class="pairing-icon-item"><div class="icon-circle">🍇</div><span>Touriga / Roriz</span></div>
+                            <div class="pairing-icon-item"><div class="icon-circle">🍖</div><span>Cabrito Assado</span></div>
+                            <div class="pairing-icon-item"><div class="icon-circle">🥖</div><span>Enchidos</span></div>
                         </div>
 
                         <ul class="tech-list">
                             <li><span>Certificação:</span> <span>ECOCERT Biológico</span></li>
                             <li><span>Estágio:</span> <span>Carvalho Francês</span></li>
                             <li><span>Teor Alcoólico:</span> <span>13.5% Vol.</span></li>
-                            <li><span>Temperatura:</span> <span>16ºC - 18ºC</span></li>
+                            <li><span>Preço Unitário:</span> <strong style="color: var(--wine-primary);">18,00 €</strong></li>
                         </ul>
-                        <button class="btn-primary" style="margin-top: 15px;" onclick="openMarketplace()">Ver na Loja Online</button>
+                        <button class="btn-primary" style="margin-top: 15px;" onclick="adicionarAoCarrinho('Bonjardim Tinto 2023', 18.00)">Adicionar ao Carrinho</button>
                     </div>
                 </div>
             </div>
@@ -545,7 +367,25 @@
         </section>
     </div>
 
-    <!-- DIRETÓRIO DE PÁGINAS / MAPA DO SITE NO RODAPÉ -->
+    <!-- CHATBOT FLUTUANTE (ASSISTENTE VIRTUAL) -->
+    <div id="chatbot-widget">
+        <button class="chat-toggle-btn" onclick="toggleChat()">💬</button>
+        <div class="chat-window" id="chat-window">
+            <div class="chat-header">
+                <span>Assistente Bonjardim (24/7)</span>
+                <span style="cursor:pointer;" onclick="toggleChat()">&times;</span>
+            </div>
+            <div class="chat-body" id="chat-messages">
+                <div class="chat-msg bot">Olá! Como posso ajudar com a sua visita, vinhos biológicos ou alojamento nos Safari Lodges?</div>
+            </div>
+            <div class="chat-footer">
+                <input type="text" id="chat-input" placeholder="Escreva a sua dúvida..." onkeypress="handleChatKey(event)">
+                <button onclick="sendChatMessage()">Enviar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- DIRETÓRIO DE PÁGINAS NO RODAPÉ -->
     <section class="sitemap-section">
         <div class="sitemap-grid">
             <div class="sitemap-col">
@@ -577,48 +417,36 @@
         </div>
     </section>
 
-    <!-- MARKETPLACE MODAL -->
+    <!-- MARKETPLACE & CHECKOUT MODAL -->
     <div id="marketplace-modal">
         <div class="market-container">
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 25px; border-bottom: 1px solid var(--border-subtle); padding-bottom: 15px;">
-                <h3 style="color: var(--wine-primary);">Loja Online • Quinta do Bonjardim</h3>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; border-bottom: 1px solid var(--border-subtle); padding-bottom: 15px;">
+                <h3 style="color: var(--wine-primary);">O seu Carrinho • Loja Online</h3>
                 <span style="font-size: 28px; cursor: pointer; color: var(--text-muted);" onclick="closeMarketplace()">&times;</span>
             </div>
             
-            <div class="market-item">
-                <div>
-                    <strong>Orange Wine 2025 (75cl)</strong>
-                    <p style="font-size: 12px; color: var(--text-muted);">Branco Biológico em contacto com peles</p>
-                </div>
-                <div style="display: flex; align-items: center; gap: 15px;">
-                    <span style="font-size: 18px; font-weight: 700; color: var(--wine-primary);">22,00 €</span>
-                    <button class="btn-primary" style="width: auto; padding: 10px 20px;" onclick="alert('Adicionado ao carrinho com sucesso!')">Comprar</button>
-                </div>
+            <div id="cart-items-container" style="max-height: 250px; overflow-y: auto; margin-bottom: 20px;">
+                <p style="color: var(--text-muted); font-size: 13px;">O seu carrinho está vazio.</p>
             </div>
 
-            <div class="market-item">
-                <div>
-                    <strong>Bonjardim Tinto Biológico 2023 (75cl)</strong>
-                    <p style="font-size: 12px; color: var(--text-muted);">Touriga Nacional & Tinta Roriz</p>
-                </div>
-                <div style="display: flex; align-items: center; gap: 15px;">
-                    <span style="font-size: 18px; font-weight: 700; color: var(--wine-primary);">18,00 €</span>
-                    <button class="btn-primary" style="width: auto; padding: 10px 20px;" onclick="alert('Adicionado ao carrinho com sucesso!')">Comprar</button>
-                </div>
+            <div style="border-top: 1px solid var(--border-subtle); padding-top: 15px; display: flex; justify-content: space-between; align-items: center; font-weight: 700; font-size: 16px;">
+                <span>Total:</span>
+                <span id="cart-total" style="color: var(--wine-primary);">0,00 €</span>
             </div>
+
+            <button class="btn-primary" style="margin-top: 20px;" onclick="finalizarCompra()">Finalizar Encomenda (MB Way / Multibanco)</button>
         </div>
     </div>
 
     <script>
-        // Entrar no site eliminando o banner por completo (.remove)
+        // Carrinho de Compras State
+        let carrinho = [];
+
         function entrarSite() {
             const gate = document.getElementById('age-gate');
-            if (gate) {
-                gate.remove();
-            }
+            if (gate) gate.remove();
         }
 
-        // Sistema de troca de páginas (SPA Views)
         function switchPage(pageId) {
             document.querySelectorAll('.page-view').forEach(p => p.classList.remove('active'));
             const target = document.getElementById('page-' + pageId);
@@ -628,18 +456,100 @@
             }
         }
 
-        // Marketplace Modal
         function openMarketplace() {
-            const modal = document.getElementById('marketplace-modal');
-            if (modal) {
-                modal.style.display = 'block';
-            }
+            document.getElementById('marketplace-modal').style.display = 'block';
+            atualizarCarrinhoUI();
         }
+
         function closeMarketplace() {
-            const modal = document.getElementById('marketplace-modal');
-            if (modal) {
-                modal.style.display = 'none';
+            document.getElementById('marketplace-modal').style.display = 'none';
+        }
+
+        function adicionarAoCarrinho(nome, preco) {
+            carrinho.push({ nome, preco });
+            document.getElementById('cart-count').textContent = carrinho.length;
+            alert(`"${nome}" foi adicionado ao seu carrinho!`);
+        }
+
+        function atualizarCarrinhoUI() {
+            const container = document.getElementById('cart-items-container');
+            const totalEl = document.getElementById('cart-total');
+
+            if (carrinho.length === 0) {
+                container.innerHTML = '<p style="color: var(--text-muted); font-size: 13px;">O seu carrinho está vazio.</p>';
+                totalEl.textContent = '0,00 €';
+                return;
             }
+
+            let html = '';
+            let total = 0;
+            carrinho.forEach((item, index) => {
+                total += item.preco;
+                html += `
+                    <div class="market-item">
+                        <div>
+                            <strong>${item.nome}</strong>
+                            <p style="font-size: 11px; color: var(--text-muted);">Garrafa 75cl (Biológico ECOCERT)</p>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 15px;">
+                            <span>${item.preco.toFixed(2)} €</span>
+                            <button onclick="removerItem(${index})" style="background:none; border:none; color:red; cursor:pointer; font-size:16px;">&times;</button>
+                        </div>
+                    </div>
+                `;
+            });
+            container.innerHTML = html;
+            totalEl.textContent = total.toFixed(2) + ' €';
+        }
+
+        function removerItem(index) {
+            carrinho.splice(index, 1);
+            document.getElementById('cart-count').textContent = carrinho.length;
+            atualizarCarrinhoUI();
+        }
+
+        function finalizarCompra() {
+            if (carrinho.length === 0) {
+                alert('O carrinho está vazio.');
+                return;
+            }
+            alert('Encomenda registada com sucesso! Referência MB Way / Multibanco gerada. Obrigado pela preferência pela Quinta do Bonjardim.');
+            carrinho = [];
+            document.getElementById('cart-count').textContent = 0;
+            closeMarketplace();
+        }
+
+        // Chatbot Widget Logic
+        function toggleChat() {
+            const win = document.getElementById('chat-window');
+            win.classList.toggle('open');
+        }
+
+        function sendChatMessage() {
+            const input = document.getElementById('chat-input');
+            const text = input.value.trim();
+            if (!text) return;
+
+            const body = document.getElementById('chat-messages');
+            body.innerHTML += `<div class="chat-msg user">${text}</div>`;
+            input.value = '';
+            body.scrollTop = body.scrollHeight;
+
+            setTimeout(() => {
+                let resposta = "Obrigado pela sua mensagem! A Quinta do Bonjardim produz vinhos biológicos na Sertã. Como posso ajudar com a sua visita?";
+                const lower = text.toLowerCase();
+                if (lower.includes('preco') || lower.includes('preço') || lower.includes('comprar')) {
+                    resposta = "Pode adquirir os nossos vinhos diretamente na Loja Online no menu superior.";
+                } else if (lower.includes('reserva') || lower.includes('visita') || lower.includes('lodge')) {
+                    resposta = "As reservas de provas e Safari Lodges podem ser feitas na secção 'Enoturismo & Lodges'.";
+                }
+                body.innerHTML += `<div class="chat-msg bot">${resposta}</div>`;
+                body.scrollTop = body.scrollHeight;
+            }, 600);
+        }
+
+        function handleChatKey(e) {
+            if (e.key === 'Enter') sendChatMessage();
         }
 
         // B2B Pairing Simulator
